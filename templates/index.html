@@ -72,12 +72,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#tf-home" class="page-scroll">Home</a></li>
+                <li><a href="#tf-services" class="page-scroll">Services</a></li>
                 <li><a href="#tf-about" class="page-scroll">About</a></li>
                 <li><a href="#tf-team" class="page-scroll">Team</a></li>
-                <li><a href="#tf-services" class="page-scroll">Services</a></li>
                 <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
                 <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>
-                <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
                 <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -93,10 +92,83 @@
             <p class="lead">We are specialized in data analytics and making your decision-making easier.</p>
             <p class="lead">
                 <a href="#tf-contact" class="page-scroll">
-                        <button class="btn btn-warning">Contact us</button>
+                    <button class="btn btn-warning">Contact us</button>
                 </a>
             </p>
-            <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            <a href="#tf-services" class="fa fa-angle-down page-scroll"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section
+==========================================-->
+<div id="tf-services" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Take a look at <strong>our services</strong></h2>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="clearfix"></div>
+            <p><em>We help your company go digital and make your work easier by improving how your business runs.
+                Our services save you time and reduce mistakes, so you can focus on growing your business.</em>
+            </p>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 service">
+                <i class="fa fa-desktop"></i>
+                <h4><strong>Web app design</strong></h4>
+                <p>Create a centralized data solution developed accordingly to your business needs. </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 service">
+                <i class="fa fa-bar-chart"></i>
+                <h4><strong>Analytics</strong></h4>
+                <p>Find valuable insights in your data and make unbiased decisions. </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 service">
+                <i class="fa fa-file"></i>
+                <h4><strong>Data strategy</strong></h4>
+                <p>Improve quality of your data with improved data collection process.</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 service">
+                <i class="fa fa-rocket"></i>
+                <h4><strong>AI</strong></h4>
+                <p>Automate your business decisions and let AI do your work.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Clients Section
+==========================================-->
+<div id="tf-clients" class="text-center">
+    <div class="overlay">
+        <div class="container">
+
+            <div class="section-title center">
+                <h2><strong>Our Clients</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
+            <div id="clients" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{% static 'img/client/snix_logo.png' %}" class="client-logo">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/client/animacel.png' %}" class="client-logo">
+                </div>
+                <div class="item">
+                    <img src="{% static 'img/client/logo-white-no-background-120x57.png' %}" class="client-logo">
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -180,90 +252,18 @@
     </div>
 </div>
 
-<!-- Services Section
-==========================================-->
-<div id="tf-services" class="text-center">
-    <div class="container">
-        <div class="section-title center">
-            <h2>Take a look at <strong>our services</strong></h2>
-            <div class="line">
-                <hr>
-            </div>
-            <div class="clearfix"></div>
-            <em>We help your company go digital and make your work easier by improving how your business runs.
-                Our services save you time and reduce mistakes, so you can focus on growing your business.</em>
-        </div>
-        <div class="space"></div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 service">
-                <i class="fa fa-desktop"></i>
-                <h4><strong>Web app design</strong></h4>
-                <p>Create a centralized data solution developed accordingly to your business needs. </p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 service">
-                <i class="fa fa-bar-chart"></i>
-                <h4><strong>Analytics</strong></h4>
-                <p>Find valuable insights in your data and make unbiased decisions. </p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 service">
-                <i class="fa fa-file"></i>
-                <h4><strong>Data strategy</strong></h4>
-                <p>Improve quality of your data with improved data collection process.</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 service">
-                <i class="fa fa-rocket"></i>
-                <h4><strong>AI</strong></h4>
-                <p>Automate your business decisions and let AI do your work.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Clients Section
-==========================================-->
-<div id="tf-clients" class="text-center">
-    <div class="overlay">
-        <div class="container">
-
-            <div class="section-title center">
-                <h2><strong>Our Clients</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
-            </div>
-            <div id="clients" class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="{% static 'img/client/snix_logo.png' %}" class="client-logo">
-                </div>
-                <div class="item">
-                    <img src="{% static 'img/client/animacel.png' %}" class="client-logo">
-                </div>
-                <div class="item">
-                    <img src="{% static 'img/client/logo-white-no-background-120x57.png' %}" class="client-logo">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <!-- Portfolio Section
 ==========================================-->
 <div id="tf-works">
     <div class="container"> <!-- Container -->
         <div class="section-title text-center center">
-            <h2>Take a look at <strong>our services</strong></h2>
+            <h2>Take a look at <strong>our projects</strong></h2>
             <div class="line">
                 <hr>
             </div>
             <div class="clearfix"></div>
-            <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
-                Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
-                very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                comes from a line in section 1.10.32.</em></small>
+            <p><em>Take a look at our projects, that helped our clients to scale their businesses:</em></p>
         </div>
         <div class="space"></div>
 
@@ -373,9 +373,7 @@
                         </div>
 
                         <div class="item">
-                            <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                                The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-                                section 1.10.32.</h5>
+                            <p>Just was fast and responsive. He created a pricing tool accordingly to our specifications.</p>
                             <p><strong>Luka Jaklic</strong>, CEO, TCE d.o.o.</p>
                         </div>
                     </div>
