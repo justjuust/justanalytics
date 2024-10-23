@@ -16,7 +16,7 @@ h1 strong{
 }
 h2{
 	text-transform: uppercase;
-	line-height: 20px;
+	line-height: 1;
 	margin:  0;
 }
 h3{
@@ -581,7 +581,12 @@ nav#footer p{
 	color: #8c8c8c;
 	transition: all 0.5s;
 }
+
+#tf-home .content {
+    text-align: center; /* Keeps the text and button centered */
+}
 #footer i.fa:hover{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
+	}
