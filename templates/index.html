@@ -403,15 +403,15 @@
                 <form method="POST" action="{% url 'contact_view' %}">
                     {% csrf_token %}
                     <div class="row">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                {{ form.email }}  <!-- Render the email field from the form -->
-                            </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Message</label>
-                        {{ form.message }}  <!-- Render the message field from the form -->
-                    </div>
-                    <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            {{ form.email }}  <!-- Render the email field from the form -->
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Message</label>
+                            {{ form.message }}  <!-- Render the message field from the form -->
+                        </div>
+                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
                     </div>
                 </form>
 
@@ -424,10 +424,11 @@
 <nav id="footer">
     <div class="container">
         <div class="pull-left fnav">
-            <p>ALL RIGHTS RESERVED. COPYRIGHT © 2024 JUST ANALYTICS, RAČUNALNIŠKE STORITVE JUST BAJŽELJ S.P. Designed by <a
-                    href="https://dribbble.com/shots/1817781--FREEBIE-JustAnalytics-Digital-agency-one-page-template"
-                    target="_blank">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira"
-                                                                     target="_blank">Jenn Pereira</a></p>
+            <p>ALL RIGHTS RESERVED. COPYRIGHT © 2024 JUST ANALYTICS, RAČUNALNIŠKE STORITVE JUST BAJŽELJ S.P. Based on a
+                design by <a
+                        href="https://dribbble.com/shots/1817781--FREEBIE-JustAnalytics-Digital-agency-one-page-template"
+                        target="_blank">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira"
+                                                                         target="_blank">Jenn Pereira</a></p>
         </div>
         <div class="pull-right fnav">
             <ul class="footer-social">
