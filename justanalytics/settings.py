@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["justanalytics-production.up.railway.app", '127.0.0.1', "www.just-analytics.com"]
 CSRF_TRUSTED_ORIGINS = ["https://justanalytics-production.up.railway.app/",
-                        "https://www.just-analytics.com/"]
+                        "https://www.just-analytics.com/", "https://www.just-analytics.com"]
 
 
 # Application definition
