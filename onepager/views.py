@@ -19,7 +19,7 @@ def contact_view(request):
 
             # Send email
             send_mail('Contact Form Message',
-                      message, email,
+                      email + "\n" + message, email,
                       ['just.bajzelj@gmail.com'],
                       fail_silently=False)
             # Optionally, redirect or render a success page
