@@ -10,6 +10,10 @@ def index(request):
     return render(request, 'index.html', {'form': form})
 
 
+def animacel_view(request):
+    return render(request, 'animacel.html', )
+
+
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

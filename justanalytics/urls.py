@@ -21,5 +21,6 @@ from onepager import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('animacel', views.animacel_view, name='index'),
     path('contact/', views.contact_view, name='contact_view'),  # Add your URL here
 ]
