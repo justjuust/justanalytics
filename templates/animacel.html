@@ -2,99 +2,19 @@
 {% load static %}
 
 <html lang="en">
-<head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]>
-    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JustAnalytics - data analytics company</title>
-    <meta name="description"
-          content="JustAnalytics is a data analytics company that provides digital solutions, data analytics, AI integration and consulting to companies that want to make first steps into data science.">
-    <meta name="keywords"
-          content="Data science, digitalization, AI, Artificial Intelligence, Machine Learning, data pipelines">
-    <meta name="author" content="ThemeForces.com">
-
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
-
-    <!-- Slider
-    ================================================== -->
-    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" media="screen">
-    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet" media="screen">
-
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
-
-    <!--    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"-->
-    <!--          rel="stylesheet" type="text/css">-->
-    <!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400"-->
-    <!--          rel="stylesheet" type="text/css">-->
-
-    <script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
-</head>
+{% include 'blocks/base.html' %}
 <body>
 <!-- Navigation
 ==========================================-->
-<nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">JustAnalytics</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#tf-home" class="page-scroll">Home</a></li>
-                <li><a href="#tf-services" class="page-scroll">Services</a></li>
-                <li><a href="#tf-industries" class="page-scroll">Industry</a></li>
-                <li><a href="#tf-clients" class="page-scroll">Clients</a></li>
-                <li><a href="#tf-about" class="page-scroll">About</a></li>
-                <li><a href="#tf-team" class="page-scroll">Team</a></li>
-                <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
-                <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>
-                <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
+{% include 'blocks/header.html' %}
 <!-- Home Page
 ==========================================-->
 <div id="tf-home" class="text-center">
     <div class="overlay">
-        <div class="row">
+        <div class="container">
             <div class="content text-left">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-11">
-                    <h1><strong>Case studies</strong></h1>
-                    <p class="lead">See projects we are working on.</p>
-                </div>
+                    <h1>Case studies</h1>
+                    <p class="lead">See the projects we are working on.</p>
             </div>
         </div>
     </div>
