@@ -14,6 +14,10 @@ def animacel_view(request):
     return render(request, 'animacel.html', )
 
 
+def veterinary_view(request):
+    return render(request, 'veterinary.html', )
+
+
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

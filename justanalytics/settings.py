@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["justanalytics-production.up.railway.app", '127.0.0.1', "www.just-analytics.com"]
 CSRF_TRUSTED_ORIGINS = ["https://justanalytics-production.up.railway.app/",

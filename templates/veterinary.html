@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+{% include 'blocks/base.html' %}
+<body>
+<!-- Navigation
+==========================================-->
+{% include 'blocks/header.html' %}
+<!-- Home Page
+==========================================-->
+<div id="tf-home" class="text-center">
+    <div class="overlay">
+        <div class="container">
+            <div class="content text-left">
+                    <h1>Veterinary data science</h1>
+                    <p class="lead">Understand your animals and make better decisions</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- About Us Page
+    ==========================================-->
+<div id="tf-about">
+    <div class="container">
+        <div class="row">
+            <!-- First image on the left -->
+            <div class="col-md-6">
+                <img src="{% static 'img/veterinary/insights.jpg' %}" class="img-responsive">
+            </div>
+            <!-- Text on the right -->
+            <div class="col-md-6">
+                <div class="about-text">
+                    <div class="section-title">
+                        <h4>Veterinary data analytics</h4>
+                        <h2>Gain animal <strong>insights</strong></h2>
+                        <hr>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="intro">As businesses grow, so does the amount of data. Understand your animal data and
+                        locate resources into right places. Maximize wellbeing of your animals.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <!-- Text on the left -->
+            <div class="col-md-6">
+                <div class="about-text">
+
+                    <div class="section-title">
+                        <h4>Govern animal data</h4>
+                        <h2>Collect data and make <strong>better</strong> decisions</h2>
+                        <hr>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="intro">No data no problem. We will build your first data solution together tailored to
+                        your needs
+                        and support you at your every step.</p>
+                    <ul class="about-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'img/veterinary/horses.jpg' %}" class="img-responsive">
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <!-- Text on the left -->
+            <div class="col-md-6">
+                <img src="{% static 'img/veterinary/hamster.jpg' %}" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <div class="about-text">
+
+                    <div class="section-title">
+                        <h4>Support at animal research</h4>
+                        <h2>Veterinary modelling</h2>
+                        <hr>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="intro">Do you want to know if you are treating your animals correctly. With modern statistical methods,
+                    machine learning and AI we will help you to answer also this quesiton.</p>
+                    <ul class="about-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Testimonials Section
+    ==========================================-->
+<div id="tf-testimonials" class="text-center">
+    <div class="overlay">
+        <div class="container">
+            <div class="section-title center">
+                <h2><strong>Our clients’</strong> testimonials</h2>
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="testimonial" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <p>Our partnership with Just was both efficient and productive. Communication regarding the
+                                scope of work, progress, and deliverables was consistently clear, ensuring a smooth and
+                                secure collaboration on our medical data. Just was proactive in proposing solutions and
+                                conducted additional research to support us throughout the journey. He also helped
+                                identify unknown challenges we hadn’t considered, thanks to his deep understanding of
+                                data science, which was invaluable given our team's limited background in this
+                                area.</p>
+                            <p><strong>Luka Mohoric</strong>, CEO, Animacel d.o.o.</p>
+                        </div>
+
+                        <div class="item">
+                            <p>Cooperation with JustAnalytics took our factory to a higher level of recording,
+                                production planning, order system and other internal processing. With Just's help, we
+                                are
+                                now proud to have our very own customized digital system up and running and are ready
+                                for growth on an international level.
+                            <p>
+                            <p><strong>Matija Koritnik</strong>, CFO, Snix d.o.o.</p>
+                        </div>
+
+                        <div class="item">
+                            <p>Just was fast and responsive. He created a pricing tool accordingly to our
+                                specifications.</p>
+                            <p><strong>Luka Jaklic</strong>, CEO, TCE d.o.o.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav id="footer">
+    <div class="container">
+        <div class="pull-left fnav">
+            <p>ALL RIGHTS RESERVED. COPYRIGHT © 2024 JUST ANALYTICS, RAČUNALNIŠKE STORITVE JUST BAJŽELJ S.P. Based on a
+                design by <a
+                        href="https://dribbble.com/shots/1817781--FREEBIE-JustAnalytics-Digital-agency-one-page-template"
+                        target="_blank">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira"
+                                                                         target="_blank">Jenn Pereira</a></p>
+        </div>
+        <div class="pull-right fnav">
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/company/just-data-analytics"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+
+
+<!--Disable owl corusel for 3 clients only-->
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+
+
+<!-- Javascripts
+================================================== -->
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
