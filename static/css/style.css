@@ -617,9 +617,7 @@ nav#footer p{
 	transition: all 0.5s;
 }
 
-#tf-home .content {
-    text-align: center; /* Keeps the text and button centered */
-}
+
 #footer i.fa:hover{
 	background: #FCAC45;
 	border-color: #FCAC45;
