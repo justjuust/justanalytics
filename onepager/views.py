@@ -44,7 +44,7 @@ class StaticViewSitemap(Sitemap):
 
     def items(self):
         # Return a list of view names or model instances
-        return ["home", "case_study_animacel", 'veterinary', 'contact_view']
+        return ["home", "case_study_animacel", 'veterinary']
 
     def location(self, item):
         # Return the URL of the view
