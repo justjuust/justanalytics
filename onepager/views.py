@@ -41,14 +41,14 @@ def contact_view(request):
     mail = EmailMessage('Contact Form Message',
                         f"From: {email}\n\n{message}",
                         settings.DEFAULT_FROM_EMAIL,
-                        ['just.bajzelj@gmail.com'],
+                        ['just@just-analytics.com'],
                         reply_to=[email])
     try:
         mail.send(fail_silently=False)
     except Exception:
         logger.exception("Failed to send contact form email")
         messages.error(request, "Sorry, your message could not be sent. "
-                                "Please email us directly at just.bajzelj@gmail.com.")
+                                "Please email us directly at just@just-analytics.com.")
     else:
         messages.success(request, "Thank you! Your message has been sent.")
 

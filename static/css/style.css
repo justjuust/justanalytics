@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
 body, html{
 	font-family: 'Lato', sans-serif;
@@ -318,7 +318,32 @@ img.img-circle.team-img {
 }
 
 #tf-industries {
-	background-color: #ffc984; /* Light orange */
+	background-color: #f7f7f7;
+	padding: 80px 0 40px;
+}
+.industry-card {
+	background: #ffffff;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+.industry-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.industry-card img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+.industry-card .industry-body {
+	padding: 20px 20px 10px;
+}
+.industry-card a,
+.industry-card a:hover {
+	color: inherit;
 }
 
 #tf-industries .overlay{
@@ -372,7 +397,7 @@ img.img-circle.team-img {
 
 #clients .item{
     padding: 0;
-    margin: 100px;
+    margin: 30px 50px;
     color: #FFF;
     text-align: center;
 }
@@ -436,6 +461,13 @@ ol.type li a.active { font-weight: 700; }
 	height: 260px;
 	overflow: hidden;
 	position: relative;
+	border-radius: 4px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.portfolio-item .hover-bg img{
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
 }
 
 .hover-bg .hover-text {
@@ -525,6 +557,16 @@ ol.type li a.active { font-weight: 700; }
 #tf-contact{
 	padding: 80px 0;
 }
+#tf-contact .form-group{
+	margin-bottom: 20px;
+	text-align: left;
+}
+#tf-contact .errorlist{
+	list-style: none;
+	color: #a94442;
+	font-size: 12px;
+	margin-top: 5px;
+}
 
 label {
 	float: left;
@@ -551,7 +593,7 @@ label {
 }
 
 #tf-contact .form-control:focus {
-	border-color: inherit;
+	border-color: #FCAC45;
 	outline: 0;
 	-webkit-box-shadow: transparent;
 	box-shadow: transparent;
@@ -561,10 +603,31 @@ button.btn.tf-btn.btn-default {
 	float: right;
 	background: #FCAC45;
 	border: 0;
-	border-radius: 0;
+	border-radius: 2px;
 	padding: 10px 40px;
 	color: #ffffff;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: background 0.3s;
+}
+button.btn.tf-btn.btn-default:hover {
+	background: #e8952c;
+}
+.btn.hero-btn {
+	background: #FCAC45;
+	border: 0;
+	border-radius: 2px;
+	padding: 12px 40px;
+	margin-top: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: background 0.3s;
+}
+.btn.hero-btn:hover,
+.btn.hero-btn:focus {
+	background: #e8952c;
+	color: #ffffff;
 }
 
 .btn:active, .btn.active {
