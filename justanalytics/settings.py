@@ -29,8 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ["justanalytics-production.up.railway.app", '127.0.0.1', "www.just-analytics.com"]
-CSRF_TRUSTED_ORIGINS = ["https://justanalytics-production.up.railway.app/",
-                        "https://www.just-analytics.com/", "https://www.just-analytics.com"]
+CSRF_TRUSTED_ORIGINS = ["https://justanalytics-production.up.railway.app",
+                        "https://www.just-analytics.com"]
 
 
 # Application definition
@@ -83,6 +83,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('GMAIL_EMAIL')  # Replace with your email
 DEFAULT_FROM_EMAIL = os.environ.get('GMAIL_EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASS')  # Use environment variables for security
+EMAIL_TIMEOUT = 10  # Don't hang the request if SMTP is unreachable
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases

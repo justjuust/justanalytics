@@ -421,14 +421,20 @@
 
                 <form method="POST" action="{% url 'contact_view' %}">
                     {% csrf_token %}
+                    {% for msg in messages %}
+                        <div class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-success{% endif %}" role="alert">{{ msg }}</div>
+                    {% endfor %}
+                    {{ form.non_field_errors }}
                     <div class="row">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label for="{{ form.email.id_for_label }}">Email address</label>
                             {{ form.email }}  <!-- Render the email field from the form -->
+                            {{ form.email.errors }}
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
+                            <label for="{{ form.message.id_for_label }}">Message</label>
                             {{ form.message }}  <!-- Render the message field from the form -->
+                            {{ form.message.errors }}
                         </div>
                         <button type="submit" class="btn tf-btn btn-default">Submit</button>
                     </div>

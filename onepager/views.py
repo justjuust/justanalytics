@@ -1,9 +1,15 @@
-from django.shortcuts import render
-from django.core.mail import send_mail
+import logging
+
+from django.conf import settings
+from django.contrib import messages
+from django.shortcuts import redirect, render
+from django.core.mail import EmailMessage
 from .forms import ContactForm
 from django.urls import reverse
 from django.contrib.sitemaps import Sitemap
 # Create your views here.
+
+logger = logging.getLogger(__name__)
 
 
 def index(request):
@@ -20,23 +26,34 @@ def veterinary_view(request):
 
 
 def contact_view(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
+    if request.method != 'POST':
+        return redirect(reverse('home') + '#tf-contact')
 
-            # Send email
-            send_mail('Contact Form Message',
-                      email + "\n" + message, email,
-                      ['just.bajzelj@gmail.com'],
-                      fail_silently=False)
-            # Optionally, redirect or render a success page
+    form = ContactForm(request.POST)
+    if not form.is_valid():
+        return render(request, 'index.html', {'form': form})
+
+    email = form.cleaned_data['email']
+    message = form.cleaned_data['message']
+
+    # Gmail only sends from the authenticated account, so the visitor's
+    # address goes in Reply-To instead of From.
+    mail = EmailMessage('Contact Form Message',
+                        f"From: {email}\n\n{message}",
+                        settings.DEFAULT_FROM_EMAIL,
+                        ['just.bajzelj@gmail.com'],
+                        reply_to=[email])
+    try:
+        mail.send(fail_silently=False)
+    except Exception:
+        logger.exception("Failed to send contact form email")
+        messages.error(request, "Sorry, your message could not be sent. "
+                                "Please email us directly at just.bajzelj@gmail.com.")
     else:
-        form = ContactForm()
+        messages.success(request, "Thank you! Your message has been sent.")
 
-    return render(request, 'index.html',
-                  {'form': form})
+    return redirect(reverse('home') + '#tf-contact')
+
 
 class StaticViewSitemap(Sitemap):
     priority = 0.5  # Importance of the URL (1.0 = highest, 0.0 = lowest)
