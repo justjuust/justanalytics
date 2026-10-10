@@ -34,5 +34,4 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('animacel', views.animacel_view, name='case_study_animacel'),
     path('veterinary', views.veterinary_view, name='veterinary'),
-    path('contact/', views.contact_view, name='contact_view'),  # Add your URL here
 ]

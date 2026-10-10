@@ -76,14 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'justanalytics.wsgi.application'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # or your email provider's SMTP server
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('GMAIL_EMAIL')  # Replace with your email
-DEFAULT_FROM_EMAIL = os.environ.get('GMAIL_EMAIL')
-EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASS')  # Use environment variables for security
-EMAIL_TIMEOUT = 10  # Don't hang the request if SMTP is unreachable
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases

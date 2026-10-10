@@ -249,6 +249,11 @@ img.img-circle.team-img {
 	padding: 9px;
 	color: #F2F2F2;
 }
+#tf-team .team-social a {
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 20px;
+}
 
 .owl-theme .owl-controls .owl-page span {
 	display: block;
@@ -320,6 +325,13 @@ img.img-circle.team-img {
 #tf-industries {
 	background-color: #f7f7f7;
 	padding: 80px 0 40px;
+}
+/* Same-height industry photos so the row lines up */
+img.industry-img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	margin-bottom: 10px;
 }
 .industry-card {
 	background: #ffffff;
@@ -557,16 +569,7 @@ ol.type li a.active { font-weight: 700; }
 #tf-contact{
 	padding: 80px 0;
 }
-#tf-contact .form-group{
-	margin-bottom: 20px;
-	text-align: left;
-}
-#tf-contact .errorlist{
-	list-style: none;
-	color: #a94442;
-	font-size: 12px;
-	margin-top: 5px;
-}
+
 
 label {
 	float: left;
@@ -613,21 +616,14 @@ button.btn.tf-btn.btn-default {
 button.btn.tf-btn.btn-default:hover {
 	background: #e8952c;
 }
-.btn.hero-btn {
-	background: #FCAC45;
-	border: 0;
-	border-radius: 2px;
-	padding: 12px 40px;
-	margin-top: 20px;
-	color: #ffffff;
+/* Large "Contact us" buttons; colours come from Bootstrap's btn-warning */
+.btn.contact-btn {
+	padding: 16px 50px;
+	margin: 20px 8px 0;
+	font-size: 20px;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	transition: background 0.3s;
-}
-.btn.hero-btn:hover,
-.btn.hero-btn:focus {
-	background: #e8952c;
-	color: #ffffff;
 }
 
 .btn:active, .btn.active {
@@ -657,6 +653,16 @@ nav#footer .fnav{ vertical-align: middle;}
 ul.footer-social li{
 	display: inline-block;
 	margin-right: 10px;
+	vertical-align: middle;
+}
+a.footer-email{
+	color: #b4b4b4;
+	font-size: 13px;
+	margin-right: 10px;
+	transition: color 0.3s;
+}
+a.footer-email:hover{
+	color: #FCAC45;
 }
 nav#footer p{
 	font-size: 12px;
